@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Avenir;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- GRANDS ECRANS ------------------------*/
+
+@media screen and (min-width:960px) {
+
+  /* MENU */
+
+  #menu {background: #10163d;
+  color: white;
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 19vh;
+  z-index: 4;}
+
+  h2 { display: inline-block;
+    text-align: center;
+  width: 12%}
+
+  h1 { display: inline-block;
+  text-align: center;
+  width: 70%
+  }
+  i.fa-socks{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  #onglets {position: relative;
+  bottom: 0;}
+
+  #onglets li {
+      list-style : none;
+      padding-bottom : 38px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+      border-bottom : 1px solid white;
+      margin-left : 0;
+      float : left;
+      /* height : 2vh; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */ */
+      margin : 2px 2px 0 2px !important;  /* Pour les navigateurs autre que IE */
+      margin : 1px 2px 0 2px;  /* Pour IE  */
+      border : 1px solid #9EA0A1;
+      border-radius: 10px 10px 0 0 ;
+  }
+
+  #onglets li.active {
+      border-bottom: 1px solid #212856;
+      background-color: #56366a;
+  }
+
+  #onglets a { border-radius: 10px 10px 0 0 ;
+      display : block;
+      color : white;
+      text-decoration : none;
+      padding : 10px;
+      transition: 0.3s;
+  }
+  #onglets a:hover {
+      background : white;
+      color: #10163d;
+  }
+
+  /* CORPS DE LA PAGE */
+
+  #section {display: flex;
+    position: relative;
+    top: 25vh;}
+
+
+  /* LISTE DES PRODUITS - COTE GAUCHE */
+  #left_div {
+    margin-left: 20px;
+    width: 60%}
+
+
+  /* TABLE  */
+  table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;}
+
+  th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #48346D;
+      color: white;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2;}
+  tr:hover {background-color: #ddd;}
+
+  .table_icon {
+    font-size: 1.2em;
+    margin-left: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .is-hidden {
+    display: none !important;
+  }
+
+  /* CREER UN PRODUIT - COTE DROIT */
+
+  #right_div {
+    width: 30%;
+  top: 25vh;
+  position: fixed;
+  left: 65%}
+
+  .inline_par {
+    display: inline-block;
+  }
+
+  .fas {
+    color: #48346D;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+
+  #form {
+    border: 2px solid #10163d;
+    border-radius: 10px;
+    padding: 10px
+  }
+
+  #form select {
+    display: inline-block;
+  }
+
+  #form input {margin: 4px;
+    width: 70%;
+  }
+
+  #submit {
+    border-radius:8px;
+  	cursor:pointer;
+  	color:black;
+    display:inline-block;
+    margin-left: 40%;
+    margin-top: 10px;
+  	padding:7px 10px;
+  	text-decoration:none;
+    transition: 0.3s;
+
+  }
+  #submit:hover {
+    background-color:#48346D;
+     color:white;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- TABLETTES ------------------------*/
+
+
+@media screen and (min-width: 200px) and (max-width: 960px) {
+
+
+  /* MENU */
+
+  #menu {background: #10163d;
+  color: white;
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 19vh;
+  z-index: 4;}
+
+  h2 { display: inline-block;
+    text-align: center;
+  width: 12%}
+
+  h1 { display: inline-block;
+  text-align: center;
+  width: 70%
+  }
+  i.fa-socks{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  #onglets {position: relative;
+  bottom: 0;}
+
+  #onglets li {
+      list-style : none;
+      padding-bottom : 38px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+      border-bottom : 1px solid white;
+      margin-left : 0;
+      float : left;
+      /* height : 2vh; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */ */
+      margin : 2px 2px 0 2px !important;  /* Pour les navigateurs autre que IE */
+      margin : 1px 2px 0 2px;  /* Pour IE  */
+      border : 1px solid #9EA0A1;
+      border-radius: 10px 10px 0 0 ;
+  }
+
+  #onglets li.active {
+      border-bottom: 1px solid #212856;
+      background-color: #56366a;
+  }
+
+  #onglets a { border-radius: 10px 10px 0 0 ;
+      display : block;
+      color : white;
+      text-decoration : none;
+      padding : 10px;
+      transition: 0.3s;
+  }
+  #onglets a:hover {
+      background : white;
+      color: #10163d;
+  }
+
+  /* CORPS DE LA PAGE */
+
+  #section {display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 25vh;}
+
+
+  /* LISTE DES PRODUITS - COTE GAUCHE */
+  #left_div {
+    margin-left: 20px;
+    width: 90%}
+
+
+  /* TABLE  */
+  table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;}
+
+  th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #48346D;
+      color: white;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2;}
+  tr:hover {background-color: #ddd;}
+
+  .table_icon {
+    font-size: 1.2em;
+    margin-left: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .is-hidden {
+    display: none !important;
+  }
+
+  /* CREER UN PRODUIT - COTE DROIT */
+
+  #right_div {
+    width: 90%;
+  /* top: 25vh;
+  position: fixed;
+  left: 65%} */
+
+  .inline_par {
+    display: inline-block !important;
+  }
+
+  .fas {
+    color: #48346D;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+
+  #form {
+    border: 2px solid #10163d;
+    border-radius: 10px;
+    padding: 10px
+  }
+
+  #form select {
+    display: inline-block;
+  }
+
+  #form input {margin: 4px;
+    width: 70%;
+  }
+
+  #submit {
+    border-radius:8px;
+  	cursor:pointer;
+  	color:black;
+    display:inline-block;
+    margin-left: 40%;
+    margin-top: 10px;
+  	padding:7px 10px;
+  	text-decoration:none;
+    transition: 0.3s;
+
+  }
+  #submit:hover {
+    background-color:#48346D;
+     color:white;
+  }
+
+
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="app_marques.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+  <title>BizOnline</title>
+</head>
+
+<body id="body">
+<!-- MENU -->
+  <div id="menu">
+    <h2>BizOnline</h2>
+    <i class="fas fa-socks"></i>
+    <h1>Gestion des stocks</h1>
+    <ul id="onglets">
+      <li ><a href="index.html"> Produits </a></li>
+      <li class="active"><a href="marques.html"> Marques </a></li>
+    </ul>
+  </div>
+
+
+
+<!-- PAGE -->
+<section id="section">
+  <!-- GROSSE DIV GAUCHE -->
+
+<div id="left_div">
+  <!-- <button id="btn_delete_products">supprimer</button> -->
+  <i class="fas fa-list-ul"></i>
+<p class="inline_par">Liste des marques proposées :</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Identifiant</th>
+        <th>Nom</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tbody_cible">
+      <tr>
+        <td>The table body</td>
+        <td>The table body</td>
+        <td>The table body</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+  <!-- GROSSE DIV DROITE -->
+
+  <div id="right_div">
+    <i class="fas fa-plus-circle"></i>
+    <p class="inline_par">Ajouter une nouvelle marque</p>
+
+    <form action="" id="form" method="post">
+      <span>Nom :</span>
+      <input type="text" id="nom" value="super marque de chaussettes">
+
+      <br>
+      <button type="submit" id="submit">Ajouter</button>
+    </form>
+
+  </div>
+
+</section>
+
+
+
+</body>
+
+</html>
